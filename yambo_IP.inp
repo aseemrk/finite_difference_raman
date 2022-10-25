@@ -1,0 +1,25 @@
+optics                           # [R] Linear Response optical properties
+chi                              # [R][CHI] Dyson equation for Chi.
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+NLogCPUs= 1                      # [PARALLEL] Live-timing CPU`s (0 for all)
+FFTGvecs= 25000            mHa    # [FFT] Plane-waves
+Chimod= "IP"                     # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+% QpntsRXd
+   1 |  1 |                         # [Xd] Transferred momenta
+%
+% BndsRnXd
+   1 |  12 |                         # [Xd] Polarization function bands
+%
+% EnRngeXd
+  0.00000 | 8.00000 |         eV    # [Xd] Energy range
+%
+% DmRngeXd
+ 0.1 | 0.1 |         eV    # [Xd] Damping range
+%
+ETStpsXd= 5000                    # [Xd] Total Energy steps
+% LongDrXd
+ 1.000000 | 0.000000 | 0.000000 |        # [Xd] [cc] Electric Field
+%
+% XfnQP_E
+ 0.855762 | 1.000000 | 1.000000 |        # [EXTQP Xd] E parameters  (c/v) eV|adim|adim
+%

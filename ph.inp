@@ -1,0 +1,11 @@
+phonons
+&inputph
+              prefix = 'Si'
+              tr2_ph = 1e-16
+           verbosity = 'high'
+              fildyn = 'matdyn'
+!            fildvscf = 'dvscf'
+!     electron_phonon = 'dvscf'
+               ldisp = .true.
+        nq1 = 1, nq2 = 1, nq3 = 1
+/

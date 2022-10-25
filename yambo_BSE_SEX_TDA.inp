@@ -1,0 +1,59 @@
+#                                                                     
+#  __  __   ________   ___ __ __    _______   ______                  
+# /_/\/_/\ /_______/\ /__//_//_/\ /_______/\ /_____/\                 
+# \ \ \ \ \\::: _  \ \\::\| \| \ \\::: _  \ \\:::_ \ \                
+#  \:\_\ \ \\::(_)  \ \\:.      \ \\::(_)  \/_\:\ \ \ \               
+#   \::::_\/ \:: __  \ \\:.\-/\  \ \\::  _  \ \\:\ \ \ \              
+#     \::\ \  \:.\ \  \ \\. \  \  \ \\::(_)  \ \\:\_\ \ \             
+#      \__\/   \__\/\__\/ \__\/ \__\/ \_______\/ \_____\/             
+#                                                                     
+#                                                                     
+# Version 5.1.0 Revision 21608 Hash (prev commit) b8e986d9e           
+#                    Branch is master                                 
+#           MPI+OpenMP+SLK+SLEPC+HDF5_IO Build                        
+#                http://www.yambo-code.org                            
+#
+bss                              # [R] BSE solver
+optics                           # [R] Linear Response optical properties
+em1s                             # [R][Xs] Statically Screened Interaction
+bse                              # [R][BSE] Bethe Salpeter Equation.
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+NLogCPUs= 1                      # [PARALLEL] Live-timing CPU`s (0 for all)
+FFTGvecs= 25076            mHa   # [FFT] Plane-waves
+Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+BSKmod= "SEX"                    # [BSE] IP/Hartree/HF/ALDA/SEX/BSfxc
+BSEmod= "resonant"               # [BSE] resonant/retarded/coupling
+BSSmod= "d"                      # [BSS] (h)aydock/(d)iagonalization/(s)lepc/(i)nversion/(t)ddft`
+BSENGexx= 25076            mHa   # [BSK] Exchange components
+BSENGBlk=-1                RL    # [BSK] Screened interaction block size [if -1 uses all the G-vectors of W(q,G,Gp)]
+#WehCpl                        # [BSK] eh interaction included also in coupling
+% BSEQptR
+ 1 | 1 |                             # [BSK] Transferred momenta range
+%
+% BSEBands
+  1 | 12 |                           # [BSK] Bands range
+%
+% BEnRange
+  0.00000 | 8.00000 |         eV    # [BSS] Energy range
+%
+% BDmRange
+ 0.100000 | 0.100000 |         eV    # [BSS] Damping range
+%
+BEnSteps= 5000                    # [BSS] Energy steps
+% BLongDir
+ 1.000000 | 0.000000 | 0.000000 |        # [BSS] [cc] Electric Field
+%
+BSEprop= "abs"                   # [BSS] Can be any among abs/jdos/kerr/magn/dich/photolum/esrt
+BSEdips= "none"                  # [BSS] Can be "trace/none" or "xy/xz/yz" to define off-diagonal rotation plane
+WRbsWF                         # [BSS] Write to disk excitonic the WFs
+% XfnQP_E
+ 0.855762 | 1.000000 | 1.000000 |        # [EXTQP Xd] E parameters  (c/v) eV|adim|adim
+%
+% BndsRnXs
+  1 | 12 |                           # [Xs] Polarization function bands
+%
+NGsBlkXs=  5129            mHa   # [Xs] Response block size
+% LongDrXs
+ 1.000000 | 1.000000 | 1.000000 |        # [Xs] [cc] Electric Field
+%
+XTermKind= "none"                # [X] X terminator ("none","BG" Bruneval-Gonze)

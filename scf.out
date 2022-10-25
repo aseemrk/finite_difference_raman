@@ -1,0 +1,1337 @@
+
+     Program PWSCF v.7.1 starts on 19Oct2022 at 16:52:35 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     5312 MiB available memory on the printing compute node when the environment starts
+
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum         721     721    223                12627    12627    2133
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            2
+     lattice parameter (alat)  =      10.1933  a.u.
+     unit-cell volume          =     264.7822 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =         8.00
+     number of Kohn-Sham states=            8
+     kinetic-energy cutoff     =      50.0000  Ry
+     charge density cutoff     =     200.0000  Ry
+     scf convergence threshold =      1.0E-10
+     mixing beta               =       0.2500
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= SLA  PW   NOGX NOGC
+                           (   1   4   0   0   0   0   0)
+
+     celldm(1)=  10.193334  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  -0.500000   0.000000   0.500000 )  
+               a(2) = (   0.000000   0.500000   0.500000 )  
+               a(3) = (  -0.500000   0.500000   0.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = ( -1.000000 -1.000000  1.000000 )  
+               b(2) = (  1.000000  1.000000  1.000000 )  
+               b(3) = ( -1.000000  1.000000 -1.000000 )  
+
+
+     PseudoPot. # 1 for Si read from file:
+     ./Si.upf
+     MD5 check sum: 9e2d726316af3d4752eea8ab0afbb951
+     Pseudo is Norm-conserving + core correction, Zval =  4.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1510 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     atomic species   valence    mass     pseudopotential
+        Si             4.00    28.08550     Si( 1.00)
+
+     24 Sym. Ops. (no inversion) found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  2     180 deg rotation - cart. axis [0,0,1]        
+
+ cryst.   s( 2) = (     0          1         -1      )
+                  (     1          0         -1      )
+                  (     0          0         -1      )
+
+ cart.    s( 2) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym =  3     180 deg rotation - cart. axis [0,1,0]        
+
+ cryst.   s( 3) = (    -1          0          0      )
+                  (    -1          0          1      )
+                  (    -1          1          0      )
+
+ cart.    s( 3) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  4     180 deg rotation - cart. axis [1,0,0]        
+
+ cryst.   s( 4) = (     0         -1          1      )
+                  (     0         -1          0      )
+                  (     1         -1          0      )
+
+ cart.    s( 4) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym =  5     120 deg rotation - cart. axis [-1,-1,-1]     
+
+ cryst.   s( 5) = (    -1          0          1      )
+                  (    -1          1          0      )
+                  (    -1          0          0      )
+
+ cart.    s( 5) = (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+
+
+      isym =  6     120 deg rotation - cart. axis [-1,1,1]       
+
+ cryst.   s( 6) = (     0          1          0      )
+                  (     0          0          1      )
+                  (     1          0          0      )
+
+ cart.    s( 6) = (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+
+
+      isym =  7     120 deg rotation - cart. axis [1,1,-1]       
+
+ cryst.   s( 7) = (     1          0         -1      )
+                  (     0          0         -1      )
+                  (     0          1         -1      )
+
+ cart.    s( 7) = (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+
+
+      isym =  8     120 deg rotation - cart. axis [1,-1,1]       
+
+ cryst.   s( 8) = (     0         -1          0      )
+                  (     1         -1          0      )
+                  (     0         -1          1      )
+
+ cart.    s( 8) = (  0.0000000 -1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+
+
+      isym =  9     120 deg rotation - cart. axis [1,1,1]        
+
+ cryst.   s( 9) = (     0          0         -1      )
+                  (     0          1         -1      )
+                  (     1          0         -1      )
+
+ cart.    s( 9) = (  0.0000000  0.0000000  1.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+
+
+      isym = 10     120 deg rotation - cart. axis [-1,1,-1]      
+
+ cryst.   s(10) = (    -1          1          0      )
+                  (    -1          0          0      )
+                  (    -1          0          1      )
+
+ cart.    s(10) = (  0.0000000  0.0000000  1.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+
+
+      isym = 11     120 deg rotation - cart. axis [1,-1,-1]      
+
+ cryst.   s(11) = (     0          0          1      )
+                  (     1          0          0      )
+                  (     0          1          0      )
+
+ cart.    s(11) = (  0.0000000  0.0000000 -1.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+
+
+      isym = 12     120 deg rotation - cart. axis [-1,-1,1]      
+
+ cryst.   s(12) = (     1         -1          0      )
+                  (     0         -1          1      )
+                  (     0         -1          0      )
+
+ cart.    s(12) = (  0.0000000  0.0000000 -1.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+
+
+      isym = 13     inv. 180 deg rotation - cart. axis [1,1,0]   
+
+ cryst.   s(13) = (     0          1          0      )
+                  (     1          0          0      )
+                  (     0          0          1      )
+
+ cart.    s(13) = (  0.0000000 -1.0000000  0.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym = 14     inv. 180 deg rotation - cart. axis [1,-1,0]  
+
+ cryst.   s(14) = (     1          0         -1      )
+                  (     0          1         -1      )
+                  (     0          0         -1      )
+
+ cart.    s(14) = (  0.0000000  1.0000000  0.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+      isym = 15     inv.  90 deg rotation - cart. axis [0,0,-1]  
+
+ cryst.   s(15) = (     0         -1          0      )
+                  (     0         -1          1      )
+                  (     1         -1          0      )
+
+ cart.    s(15) = (  0.0000000 -1.0000000  0.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym = 16     inv.  90 deg rotation - cart. axis [0,0,1]   
+
+ cryst.   s(16) = (    -1          0          1      )
+                  (    -1          0          0      )
+                  (    -1          1          0      )
+
+ cart.    s(16) = (  0.0000000  1.0000000  0.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+
+
+      isym = 17     inv. 180 deg rotation - cart. axis [1,0,1]   
+
+ cryst.   s(17) = (     1          0          0      )
+                  (     0          0          1      )
+                  (     0          1          0      )
+
+ cart.    s(17) = (  0.0000000  0.0000000 -1.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+
+
+      isym = 18     inv. 180 deg rotation - cart. axis [-1,0,1]  
+
+ cryst.   s(18) = (    -1          0          0      )
+                  (    -1          1          0      )
+                  (    -1          0          1      )
+
+ cart.    s(18) = (  0.0000000  0.0000000  1.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+
+
+      isym = 19     inv.  90 deg rotation - cart. axis [0,1,0]   
+
+ cryst.   s(19) = (     0         -1          1      )
+                  (     1         -1          0      )
+                  (     0         -1          0      )
+
+ cart.    s(19) = (  0.0000000  0.0000000 -1.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  (  1.0000000  0.0000000  0.0000000 )
+
+
+      isym = 20     inv.  90 deg rotation - cart. axis [0,-1,0]  
+
+ cryst.   s(20) = (     0          1         -1      )
+                  (     0          0         -1      )
+                  (     1          0         -1      )
+
+ cart.    s(20) = (  0.0000000  0.0000000  1.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+                  ( -1.0000000  0.0000000  0.0000000 )
+
+
+      isym = 21     inv. 180 deg rotation - cart. axis [0,1,1]   
+
+ cryst.   s(21) = (     1         -1          0      )
+                  (     0         -1          0      )
+                  (     0         -1          1      )
+
+ cart.    s(21) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+
+
+      isym = 22     inv. 180 deg rotation - cart. axis [0,1,-1]  
+
+ cryst.   s(22) = (     0          0          1      )
+                  (     0          1          0      )
+                  (     1          0          0      )
+
+ cart.    s(22) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+
+
+      isym = 23     inv.  90 deg rotation - cart. axis [-1,0,0]  
+
+ cryst.   s(23) = (     0          0         -1      )
+                  (     1          0         -1      )
+                  (     0          1         -1      )
+
+ cart.    s(23) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000 -1.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+
+
+      isym = 24     inv.  90 deg rotation - cart. axis [1,0,0]   
+
+ cryst.   s(24) = (    -1          1          0      )
+                  (    -1          0          1      )
+                  (    -1          0          0      )
+
+ cart.    s(24) = ( -1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+                  (  0.0000000 -1.0000000  0.0000000 )
+
+
+     point group T_d (-43m) 
+     there are  5 classes
+     the character table:
+
+       E     8C3   3C2   6S4   6s_d 
+A_1    1.00  1.00  1.00  1.00  1.00
+A_2    1.00  1.00  1.00 -1.00 -1.00
+E      2.00 -1.00  2.00  0.00  0.00
+T_1    3.00  0.00 -1.00  1.00 -1.00
+T_2    3.00  0.00 -1.00 -1.00  1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+     8C3      5    7    8    6   12    9   10   11
+          120 deg rotation - cart. axis [-1,-1,-1]               
+     3C2      2    3    4
+          180 deg rotation - cart. axis [0,0,1]                  
+     6S4     15   16   20   19   23   24
+          inv.  90 deg rotation - cart. axis [0,0,-1]            
+     6s_d    13   14   17   18   21   22
+          inv. 180 deg rotation - cart. axis [1,1,0]             
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Si  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Si  tau(   2) = (  -0.2500000   0.2500000   0.2500000  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           Si  tau(   1) = (  0.0000000  0.0000000  0.0000000  )
+         2           Si  tau(   2) = (  0.2500000  0.2500000  0.2500000  )
+
+     number of k points=    72
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0011574
+        k(    2) = (  -0.0833333   0.0833333  -0.0833333), wk =   0.0092593
+        k(    3) = (  -0.1666667   0.1666667  -0.1666667), wk =   0.0092593
+        k(    4) = (  -0.2500000   0.2500000  -0.2500000), wk =   0.0092593
+        k(    5) = (  -0.3333333   0.3333333  -0.3333333), wk =   0.0092593
+        k(    6) = (  -0.4166667   0.4166667  -0.4166667), wk =   0.0092593
+        k(    7) = (   0.5000000  -0.5000000   0.5000000), wk =   0.0046296
+        k(    8) = (   0.0000000   0.1666667   0.0000000), wk =   0.0069444
+        k(    9) = (  -0.0833333   0.2500000  -0.0833333), wk =   0.0277778
+        k(   10) = (  -0.1666667   0.3333333  -0.1666667), wk =   0.0277778
+        k(   11) = (  -0.2500000   0.4166667  -0.2500000), wk =   0.0277778
+        k(   12) = (  -0.3333333   0.5000000  -0.3333333), wk =   0.0277778
+        k(   13) = (   0.5833333  -0.4166667   0.5833333), wk =   0.0277778
+        k(   14) = (   0.5000000  -0.3333333   0.5000000), wk =   0.0277778
+        k(   15) = (   0.4166667  -0.2500000   0.4166667), wk =   0.0277778
+        k(   16) = (   0.3333333  -0.1666667   0.3333333), wk =   0.0277778
+        k(   17) = (   0.2500000  -0.0833333   0.2500000), wk =   0.0277778
+        k(   18) = (   0.1666667  -0.0000000   0.1666667), wk =   0.0138889
+        k(   19) = (   0.0000000   0.3333333   0.0000000), wk =   0.0069444
+        k(   20) = (  -0.0833333   0.4166667  -0.0833333), wk =   0.0277778
+        k(   21) = (  -0.1666667   0.5000000  -0.1666667), wk =   0.0277778
+        k(   22) = (  -0.2500000   0.5833333  -0.2500000), wk =   0.0277778
+        k(   23) = (   0.6666667  -0.3333333   0.6666667), wk =   0.0277778
+        k(   24) = (   0.5833333  -0.2500000   0.5833333), wk =   0.0277778
+        k(   25) = (   0.5000000  -0.1666667   0.5000000), wk =   0.0277778
+        k(   26) = (   0.4166667  -0.0833333   0.4166667), wk =   0.0277778
+        k(   27) = (   0.3333333   0.0000000   0.3333333), wk =   0.0138889
+        k(   28) = (   0.0000000   0.5000000   0.0000000), wk =   0.0069444
+        k(   29) = (  -0.0833333   0.5833333  -0.0833333), wk =   0.0277778
+        k(   30) = (  -0.1666667   0.6666667  -0.1666667), wk =   0.0277778
+        k(   31) = (   0.7500000  -0.2500000   0.7500000), wk =   0.0277778
+        k(   32) = (   0.6666667  -0.1666667   0.6666667), wk =   0.0277778
+        k(   33) = (   0.5833333  -0.0833333   0.5833333), wk =   0.0277778
+        k(   34) = (   0.5000000   0.0000000   0.5000000), wk =   0.0138889
+        k(   35) = (   0.0000000   0.6666667   0.0000000), wk =   0.0069444
+        k(   36) = (  -0.0833333   0.7500000  -0.0833333), wk =   0.0277778
+        k(   37) = (   0.8333333  -0.1666667   0.8333333), wk =   0.0277778
+        k(   38) = (   0.7500000  -0.0833333   0.7500000), wk =   0.0277778
+        k(   39) = (   0.6666667  -0.0000000   0.6666667), wk =   0.0138889
+        k(   40) = (   0.0000000   0.8333333   0.0000000), wk =   0.0069444
+        k(   41) = (   0.9166667  -0.0833333   0.9166667), wk =   0.0277778
+        k(   42) = (   0.8333333   0.0000000   0.8333333), wk =   0.0138889
+        k(   43) = (   0.0000000  -1.0000000   0.0000000), wk =   0.0034722
+        k(   44) = (  -0.1666667   0.3333333   0.0000000), wk =   0.0277778
+        k(   45) = (  -0.2500000   0.4166667  -0.0833333), wk =   0.0555556
+        k(   46) = (  -0.3333333   0.5000000  -0.1666667), wk =   0.0555556
+        k(   47) = (   0.5833333  -0.4166667   0.7500000), wk =   0.0555556
+        k(   48) = (   0.5000000  -0.3333333   0.6666667), wk =   0.0277778
+        k(   49) = (  -0.1666667   0.5000000   0.0000000), wk =   0.0277778
+        k(   50) = (  -0.2500000   0.5833333  -0.0833333), wk =   0.0555556
+        k(   51) = (   0.6666667  -0.3333333   0.8333333), wk =   0.0555556
+        k(   52) = (   0.5833333  -0.2500000   0.7500000), wk =   0.0555556
+        k(   53) = (   0.5000000  -0.1666667   0.6666667), wk =   0.0555556
+        k(   54) = (   0.4166667  -0.0833333   0.5833333), wk =   0.0555556
+        k(   55) = (   0.3333333   0.0000000   0.5000000), wk =   0.0277778
+        k(   56) = (  -0.1666667   0.6666667  -0.0000000), wk =   0.0277778
+        k(   57) = (   0.7500000  -0.2500000   0.9166667), wk =   0.0555556
+        k(   58) = (   0.6666667  -0.1666667   0.8333333), wk =   0.0555556
+        k(   59) = (   0.5833333  -0.0833333   0.7500000), wk =   0.0555556
+        k(   60) = (   0.5000000   0.0000000   0.6666667), wk =   0.0277778
+        k(   61) = (   0.8333333  -0.1666667   1.0000000), wk =   0.0277778
+        k(   62) = (   0.7500000  -0.0833333   0.9166667), wk =   0.0555556
+        k(   63) = (   0.6666667   0.0000000   0.8333333), wk =   0.0277778
+        k(   64) = (  -0.1666667  -1.0000000  -0.0000000), wk =   0.0138889
+        k(   65) = (   0.6666667  -0.3333333   1.0000000), wk =   0.0277778
+        k(   66) = (   0.5833333  -0.2500000   0.9166667), wk =   0.0555556
+        k(   67) = (   0.5000000  -0.1666667   0.8333333), wk =   0.0277778
+        k(   68) = (   0.6666667  -0.1666667   1.0000000), wk =   0.0277778
+        k(   69) = (   0.5833333  -0.0833333   0.9166667), wk =   0.0555556
+        k(   70) = (   0.5000000   0.0000000   0.8333333), wk =   0.0277778
+        k(   71) = (  -0.3333333  -1.0000000   0.0000000), wk =   0.0138889
+        k(   72) = (  -0.5000000  -1.0000000   0.0000000), wk =   0.0069444
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   0.0011574
+        k(    2) = (   0.0000000   0.0000000   0.0833333), wk =   0.0092593
+        k(    3) = (   0.0000000   0.0000000   0.1666667), wk =   0.0092593
+        k(    4) = (   0.0000000   0.0000000   0.2500000), wk =   0.0092593
+        k(    5) = (   0.0000000   0.0000000   0.3333333), wk =   0.0092593
+        k(    6) = (   0.0000000   0.0000000   0.4166667), wk =   0.0092593
+        k(    7) = (   0.0000000   0.0000000  -0.5000000), wk =   0.0046296
+        k(    8) = (   0.0000000   0.0833333   0.0833333), wk =   0.0069444
+        k(    9) = (   0.0000000   0.0833333   0.1666667), wk =   0.0277778
+        k(   10) = (   0.0000000   0.0833333   0.2500000), wk =   0.0277778
+        k(   11) = (   0.0000000   0.0833333   0.3333333), wk =   0.0277778
+        k(   12) = (   0.0000000   0.0833333   0.4166667), wk =   0.0277778
+        k(   13) = (   0.0000000   0.0833333  -0.5000000), wk =   0.0277778
+        k(   14) = (   0.0000000   0.0833333  -0.4166667), wk =   0.0277778
+        k(   15) = (   0.0000000   0.0833333  -0.3333333), wk =   0.0277778
+        k(   16) = (   0.0000000   0.0833333  -0.2500000), wk =   0.0277778
+        k(   17) = (   0.0000000   0.0833333  -0.1666667), wk =   0.0277778
+        k(   18) = (   0.0000000   0.0833333  -0.0833333), wk =   0.0138889
+        k(   19) = (   0.0000000   0.1666667   0.1666667), wk =   0.0069444
+        k(   20) = (   0.0000000   0.1666667   0.2500000), wk =   0.0277778
+        k(   21) = (   0.0000000   0.1666667   0.3333333), wk =   0.0277778
+        k(   22) = (   0.0000000   0.1666667   0.4166667), wk =   0.0277778
+        k(   23) = (   0.0000000   0.1666667  -0.5000000), wk =   0.0277778
+        k(   24) = (   0.0000000   0.1666667  -0.4166667), wk =   0.0277778
+        k(   25) = (   0.0000000   0.1666667  -0.3333333), wk =   0.0277778
+        k(   26) = (   0.0000000   0.1666667  -0.2500000), wk =   0.0277778
+        k(   27) = (   0.0000000   0.1666667  -0.1666667), wk =   0.0138889
+        k(   28) = (   0.0000000   0.2500000   0.2500000), wk =   0.0069444
+        k(   29) = (   0.0000000   0.2500000   0.3333333), wk =   0.0277778
+        k(   30) = (   0.0000000   0.2500000   0.4166667), wk =   0.0277778
+        k(   31) = (   0.0000000   0.2500000  -0.5000000), wk =   0.0277778
+        k(   32) = (   0.0000000   0.2500000  -0.4166667), wk =   0.0277778
+        k(   33) = (   0.0000000   0.2500000  -0.3333333), wk =   0.0277778
+        k(   34) = (   0.0000000   0.2500000  -0.2500000), wk =   0.0138889
+        k(   35) = (   0.0000000   0.3333333   0.3333333), wk =   0.0069444
+        k(   36) = (   0.0000000   0.3333333   0.4166667), wk =   0.0277778
+        k(   37) = (   0.0000000   0.3333333  -0.5000000), wk =   0.0277778
+        k(   38) = (   0.0000000   0.3333333  -0.4166667), wk =   0.0277778
+        k(   39) = (   0.0000000   0.3333333  -0.3333333), wk =   0.0138889
+        k(   40) = (   0.0000000   0.4166667   0.4166667), wk =   0.0069444
+        k(   41) = (   0.0000000   0.4166667  -0.5000000), wk =   0.0277778
+        k(   42) = (   0.0000000   0.4166667  -0.4166667), wk =   0.0138889
+        k(   43) = (   0.0000000  -0.5000000  -0.5000000), wk =   0.0034722
+        k(   44) = (   0.0833333   0.1666667   0.2500000), wk =   0.0277778
+        k(   45) = (   0.0833333   0.1666667   0.3333333), wk =   0.0555556
+        k(   46) = (   0.0833333   0.1666667   0.4166667), wk =   0.0555556
+        k(   47) = (   0.0833333   0.1666667  -0.5000000), wk =   0.0555556
+        k(   48) = (   0.0833333   0.1666667  -0.4166667), wk =   0.0277778
+        k(   49) = (   0.0833333   0.2500000   0.3333333), wk =   0.0277778
+        k(   50) = (   0.0833333   0.2500000   0.4166667), wk =   0.0555556
+        k(   51) = (   0.0833333   0.2500000  -0.5000000), wk =   0.0555556
+        k(   52) = (   0.0833333   0.2500000  -0.4166667), wk =   0.0555556
+        k(   53) = (   0.0833333   0.2500000  -0.3333333), wk =   0.0555556
+        k(   54) = (   0.0833333   0.2500000  -0.2500000), wk =   0.0555556
+        k(   55) = (   0.0833333   0.2500000  -0.1666667), wk =   0.0277778
+        k(   56) = (   0.0833333   0.3333333   0.4166667), wk =   0.0277778
+        k(   57) = (   0.0833333   0.3333333  -0.5000000), wk =   0.0555556
+        k(   58) = (   0.0833333   0.3333333  -0.4166667), wk =   0.0555556
+        k(   59) = (   0.0833333   0.3333333  -0.3333333), wk =   0.0555556
+        k(   60) = (   0.0833333   0.3333333  -0.2500000), wk =   0.0277778
+        k(   61) = (   0.0833333   0.4166667  -0.5000000), wk =   0.0277778
+        k(   62) = (   0.0833333   0.4166667  -0.4166667), wk =   0.0555556
+        k(   63) = (   0.0833333   0.4166667  -0.3333333), wk =   0.0277778
+        k(   64) = (   0.0833333  -0.5000000  -0.4166667), wk =   0.0138889
+        k(   65) = (   0.1666667   0.3333333  -0.5000000), wk =   0.0277778
+        k(   66) = (   0.1666667   0.3333333  -0.4166667), wk =   0.0555556
+        k(   67) = (   0.1666667   0.3333333  -0.3333333), wk =   0.0277778
+        k(   68) = (   0.1666667   0.4166667  -0.4166667), wk =   0.0277778
+        k(   69) = (   0.1666667   0.4166667  -0.3333333), wk =   0.0555556
+        k(   70) = (   0.1666667   0.4166667  -0.2500000), wk =   0.0277778
+        k(   71) = (   0.1666667  -0.5000000  -0.3333333), wk =   0.0138889
+        k(   72) = (   0.2500000  -0.5000000  -0.2500000), wk =   0.0069444
+
+     Dense  grid:    12627 G-vectors     FFT dimensions: (  36,  36,  36)
+
+     Dynamical RAM for                 wfc:       0.19 MB
+
+     Dynamical RAM for     wfc (w. buffer):      14.09 MB
+
+     Dynamical RAM for           str. fact:       0.19 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:       0.87 MB
+
+     Dynamical RAM for                qrad:       1.14 MB
+
+     Dynamical RAM for          rho,v,vnew:       1.65 MB
+
+     Dynamical RAM for               rhoin:       0.55 MB
+
+     Dynamical RAM for            rho*nmix:       3.08 MB
+
+     Dynamical RAM for           G-vectors:       0.82 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.01 MB
+
+     Dynamical RAM for          <psi|beta>:       0.00 MB
+
+     Dynamical RAM for                 psi:       0.39 MB
+
+     Dynamical RAM for                hpsi:       0.39 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:       0.39 MB
+
+     Estimated static dynamical RAM per process >      21.46 MB
+
+     Estimated max dynamical RAM per process >      25.33 MB
+
+     Initial potential from superposition of free atoms
+
+     starting charge       7.9989, renormalised to       8.0000
+     Starting wfcs are random
+
+     total cpu time spent up to now is        1.9 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            50 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5278 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.00E-02,  avg # of iterations =  8.3
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            51 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5236 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  7.33E-04,  avg # of iterations =  1.7
+
+     total cpu time spent up to now is       18.0 secs
+
+     total energy              =     -17.05849009 Ry
+     estimated scf accuracy    <       0.06105589 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            54 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5235 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  7.63E-04,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is       22.3 secs
+
+     total energy              =     -17.04848696 Ry
+     estimated scf accuracy    <       0.02950609 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            55 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5219 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.69E-04,  avg # of iterations =  1.2
+
+     total cpu time spent up to now is       26.5 secs
+
+     total energy              =     -17.05075327 Ry
+     estimated scf accuracy    <       0.00047182 Ry
+
+     iteration #  4     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            55 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5214 MiB available memory on the node where the printing process lives
+------------------
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  5.90E-06,  avg # of iterations =  7.9
+
+     total cpu time spent up to now is       34.6 secs
+
+     total energy              =     -17.05086473 Ry
+     estimated scf accuracy    <       0.00013980 Ry
+
+     iteration #  5     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            55 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5229 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.75E-06,  avg # of iterations =  2.2
+
+     total cpu time spent up to now is       39.3 secs
+
+     total energy              =     -17.05088494 Ry
+     estimated scf accuracy    <       0.00000793 Ry
+
+     iteration #  6     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            56 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5192 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  9.92E-08,  avg # of iterations =  1.4
+
+     total cpu time spent up to now is       43.6 secs
+
+     total energy              =     -17.05088430 Ry
+     estimated scf accuracy    <       0.00000241 Ry
+
+     iteration #  7     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            56 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5196 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.01E-08,  avg # of iterations =  1.9
+
+     total cpu time spent up to now is       48.1 secs
+
+     total energy              =     -17.05088465 Ry
+     estimated scf accuracy    <       0.00000005 Ry
+
+     iteration #  8     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            56 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5220 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  6.35E-10,  avg # of iterations =  2.5
+
+     total cpu time spent up to now is       53.2 secs
+
+     total energy              =     -17.05088467 Ry
+     estimated scf accuracy    <          3.3E-09 Ry
+
+     iteration #  9     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            57 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5211 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  4.07E-11,  avg # of iterations =  2.3
+
+     total cpu time spent up to now is       57.9 secs
+
+     total energy              =     -17.05088467 Ry
+     estimated scf accuracy    <          3.2E-10 Ry
+
+     iteration # 10     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            57 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5211 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  4.02E-12,  avg # of iterations =  2.2
+
+     total cpu time spent up to now is       62.6 secs
+
+     total energy              =     -17.05088467 Ry
+     estimated scf accuracy    <          1.4E-10 Ry
+
+     iteration # 11     ecut=    50.00 Ry     beta= 0.25
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+            57 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5234 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.80E-12,  avg # of iterations =  1.4
+
+     total cpu time spent up to now is       66.9 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 (  1591 PWs)   bands (ev):
+
+    -5.8523   6.2470   6.2470   6.2470   8.7913   8.7913   8.7913   9.6467
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.0833 0.0833-0.0833 (  1561 PWs)   bands (ev):
+
+    -5.7598   5.3760   6.1001   6.1001   8.8360   9.0067   9.0067  10.3044
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667 0.1667-0.1667 (  1570 PWs)   bands (ev):
+
+    -5.4850   3.8329   5.7885   5.7885   8.5708   9.4479   9.4479  11.7176
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.2500 0.2500-0.2500 (  1573 PWs)   bands (ev):
+
+    -5.0386   2.2643   5.4758   5.4758   8.2402   9.7392   9.7392  13.1601
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.3333 0.3333-0.3333 (  1591 PWs)   bands (ev):
+
+    -4.4498   0.8345   5.2334   5.2334   7.9696   9.7287   9.7287  14.0123
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.4167 0.4167-0.4167 (  1586 PWs)   bands (ev):
+
+    -3.8131  -0.3184   5.0843   5.0843   7.7991   9.6070   9.6070  13.9021
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000-0.5000 0.5000 (  1568 PWs)   bands (ev):
+
+    -3.4667  -0.8384   5.0344   5.0344   7.7413   9.5494   9.5494  13.8126
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.0000 0.1667 0.0000 (  1571 PWs)   bands (ev):
+
+    -5.7288   5.5528   5.8056   5.8056   8.4988   9.3819   9.3819  10.2843
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.0833 0.2500-0.0833 (  1566 PWs)   bands (ev):
+
+    -5.5143   4.2988   5.4349   5.6328   8.5152   9.4716   9.9269  11.1550
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667 0.3333-0.1667 (  1574 PWs)   bands (ev):
+
+    -5.1236   2.7738   5.1180   5.3031   8.6440   9.4564  10.3116  11.6097
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.2500 0.4167-0.2500 (  1584 PWs)   bands (ev):
+
+    -4.5773   1.3141   4.9069   4.9443   8.5028   9.5201  10.3245  12.1805
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.3333 0.5000-0.3333 (  1577 PWs)   bands (ev):
+
+    -3.9370   0.0605   4.6435   4.8181   8.3377   9.4708  10.1178  13.2307
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.4167 0.5833 (  1572 PWs)   bands (ev):
+
+    -3.4301  -0.7296   4.4345   4.8517   8.2589   9.4648   9.9107  14.0618
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000-0.3333 0.5000 (  1575 PWs)   bands (ev):
+
+    -3.5555  -0.5464   4.3359   4.9986   8.2885   9.5815   9.7980  14.1581
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.4167-0.2500 0.4167 (  1584 PWs)   bands (ev):
+
+    -4.1544   0.4485   4.3612   5.2426   8.4249   9.7708   9.7988  13.6852
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.3333-0.1667 0.3333 (  1584 PWs)   bands (ev):
+
+    -4.7755   1.7864   4.5206   5.5575   8.6555   9.6995   9.9660  12.7411
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.2500-0.0833 0.2500 (  1566 PWs)   bands (ev):
+
+    -5.2733   3.2690   4.8266   5.8916   8.9452   9.4041   9.7625  11.9838
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.1667-0.0000 0.1667 (  1558 PWs)   bands (ev):
+
+    -5.6063   4.6419   5.3578   6.1297   9.0433   9.1782   9.1866  11.0967
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.0000 0.3333 0.0000 (  1559 PWs)   bands (ev):
+
+    -5.3602   4.2036   5.0280   5.0280   7.8837  10.5220  10.5992  10.5992
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.0833 0.4167-0.0833 (  1577 PWs)   bands (ev):
+
+    -5.0275   3.0990   4.6750   4.6887   7.9012  10.1015  10.9177  11.1649
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667 0.5000-0.1667 (  1576 PWs)   bands (ev):
+
+    -4.5304   1.7644   4.2124   4.4679   8.1413  10.2816  10.7402  11.3259
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.2500 0.5833-0.2500 (  1587 PWs)   bands (ev):
+
+    -3.9096   0.5054   3.7647   4.3844   8.1813  10.4933  11.1352  11.2561
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667-0.3333 0.6667 (  1577 PWs)   bands (ev):
+
+    -3.3095  -0.4518   3.4132   4.4409   8.2138  10.3372  10.8543  12.6460
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.2500 0.5833 (  1574 PWs)   bands (ev):
+
+    -3.1904  -0.6171   3.1934   4.6296   8.3670  10.2814  10.6241  14.2077
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000-0.1667 0.5000 (  1578 PWs)   bands (ev):
+
+    -3.7055   0.1625   3.1322   4.9311   8.6471  10.3295  10.4603  13.5198
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.4167-0.0833 0.4167 (  1571 PWs)   bands (ev):
+
+    -4.3442   1.3344   3.2734   5.3066   8.9990  10.2393  10.3839  12.3525
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.3333 0.0000 0.3333 (  1574 PWs)   bands (ev):
+
+    -4.8864   2.4961   3.7693   5.6777   9.2772   9.7964  10.0572  11.8835
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.0000 0.5000 0.0000 (  1587 PWs)   bands (ev):
+
+    -4.7524   2.7151   4.3200   4.3200   7.2840   9.2947  12.0209  12.0209
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.0833 0.5833-0.0833 (  1583 PWs)   bands (ev):
+
+    -4.3082   1.7931   3.8396   4.0703   7.3685   8.9326  12.3072  12.5025
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667 0.6667-0.1667 (  1588 PWs)   bands (ev):
+
+    -3.7217   0.7458   3.1881   3.9625   7.5814   9.4226  12.1679  12.4533
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.7500-0.2500 0.7500 (  1586 PWs)   bands (ev):
+
+    -3.0824  -0.2019   2.6282   4.0030   7.6661  10.6373  11.9991  12.1688
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667-0.1667 0.6667 (  1579 PWs)   bands (ev):
+
+    -2.7466  -0.6304   2.2558   4.1872   7.8509  11.6584  11.8680  12.4194
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.0833 0.5833 (  1578 PWs)   bands (ev):
+
+    -3.1337  -0.1219   2.1295   4.4985   8.1881  11.5702  11.6532  13.4124
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000 0.0000 0.5000 (  1576 PWs)   bands (ev):
+
+    -3.7706   0.7178   2.3959   4.8991   8.6350  11.0392  11.3422  12.3770
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.0000 0.6667 0.0000 (  1580 PWs)   bands (ev):
+
+    -3.9164   1.2062   3.7846   3.7846   6.8629   8.1254  13.5338  13.5338
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.0833 0.7500-0.0833 (  1590 PWs)   bands (ev):
+
+    -3.3722   0.4106   3.2785   3.6402   7.0262   8.0002  13.8562  13.9029
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.8333-0.1667 0.8333 (  1596 PWs)   bands (ev):
+
+    -2.7300  -0.3691   2.5217   3.6472   7.1944   8.8855  13.7168  13.7414
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.7500-0.0833 0.7500 (  1587 PWs)   bands (ev):
+
+    -2.2457  -0.8726   1.9229   3.8043   7.3748  10.3540  13.3635  13.5669
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667-0.0000 0.6667 (  1578 PWs)   bands (ev):
+
+    -2.5224  -0.5838   1.7144   4.0987   7.7127  11.9942  12.7419  13.3344
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.0000 0.8333 0.0000 (  1600 PWs)   bands (ev):
+
+    -2.8699  -0.2641   3.4549   3.4549   6.6959   7.2967  15.1013  15.1013
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.9167-0.0833 0.9167 (  1590 PWs)   bands (ev):
+
+    -2.2453  -0.9614   3.0017   3.4210   6.8960   7.4798  15.3502  15.4447
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.8333 0.0000 0.8333 (  1590 PWs)   bands (ev):
+
+    -1.7748  -1.3745   2.3011   3.5404   7.0578   8.7111  14.8048  15.3331
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.0000-1.0000 0.0000 (  1588 PWs)   bands (ev):
+
+    -1.6396  -1.6396   3.3439   3.3439   6.8286   6.8286  16.3896  16.3896
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667 0.3333 0.0000 (  1575 PWs)   bands (ev):
+
+    -5.2410   3.4978   4.5695   5.5311   8.5369   9.8015  10.3993  11.1183
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.2500 0.4167-0.0833 (  1576 PWs)   bands (ev):
+
+    -4.7968   2.2367   4.0288   5.2505   8.8201   9.7607  10.8028  11.0880
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.3333 0.5000-0.1667 (  1583 PWs)   bands (ev):
+
+    -4.2099   0.9102   3.7591   4.9160   8.8649   9.6055  10.8594  11.7520
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.4167 0.7500 (  1580 PWs)   bands (ev):
+
+    -3.5723  -0.2036   3.6329   4.6638   8.8152   9.3904  10.7738  12.9843
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000-0.3333 0.6667 (  1580 PWs)   bands (ev):
+
+    -3.2218  -0.7167   3.5980   4.5699   8.7983   9.2950  10.7270  14.2776
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667 0.5000 0.0000 (  1576 PWs)   bands (ev):
+
+    -4.6397   2.3012   3.8606   4.5896   7.9662   9.7053  11.0640  11.8951
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.2500 0.5833-0.0833 (  1582 PWs)   bands (ev):
+
+    -4.0970   1.2337   3.3120   4.2920   8.2996   9.9271  10.8008  12.2790
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667-0.3333 0.8333 (  1581 PWs)   bands (ev):
+
+    -3.4574   0.1555   2.9513   4.0752   8.4159  10.4187  11.0301  12.2575
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.2500 0.7500 (  1573 PWs)   bands (ev):
+
+    -2.9449  -0.5715   2.7013   4.0567   8.5466  10.1448  12.1414  12.5118
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000-0.1667 0.6667 (  1577 PWs)   bands (ev):
+
+    -3.0850  -0.3786   2.5779   4.2341   8.8058   9.9506  12.0621  12.8898
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.4167-0.0833 0.5833 (  1582 PWs)   bands (ev):
+
+    -3.6913   0.5218   2.6476   4.5594   9.1820   9.8083  11.5119  12.0040
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.3333 0.0000 0.5000 (  1573 PWs)   bands (ev):
+
+    -4.3066   1.5194   3.0674   4.9517   9.4198   9.5853  10.8642  11.5802
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667 0.6667-0.0000 (  1583 PWs)   bands (ev):
+
+    -3.8153   1.0279   3.3419   3.7842   7.5515   8.6272  12.3193  13.4803
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.7500-0.2500 0.9167 (  1586 PWs)   bands (ev):
+
+    -3.1975   0.1805   2.7341   3.5595   7.8837   9.1780  12.0095  13.8499
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667-0.1667 0.8333 (  1585 PWs)   bands (ev):
+
+    -2.5925  -0.5507   2.1971   3.5680   8.0367  10.4901  11.7113  13.7827
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.0833 0.7500 (  1580 PWs)   bands (ev):
+
+    -2.5169  -0.6256   1.8986   3.7717   8.3005  11.2679  12.2791  12.9829
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000 0.0000 0.6667 (  1581 PWs)   bands (ev):
+
+    -3.0683  -0.0234   1.9863   4.1256   8.7060  10.8628  11.7243  13.0804
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.8333-0.1667 1.0000 (  1590 PWs)   bands (ev):
+
+    -2.7899  -0.2994   3.0534   3.2557   7.3688   7.8735  13.7021  15.0977
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.7500-0.0833 0.9167 (  1592 PWs)   bands (ev):
+
+    -2.1470  -0.9510   2.3974   3.2101   7.6596   8.8096  13.3743  14.8715
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667 0.0000 0.8333 (  1584 PWs)   bands (ev):
+
+    -1.9823  -1.0706   1.8803   3.4119   7.9028  10.3604  12.9128  13.2964
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.1667-1.0000-0.0000 (  1582 PWs)   bands (ev):
+
+    -1.5990  -1.5990   3.0180   3.0180   7.4640   7.4640  15.1824  15.1824
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667-0.3333 1.0000 (  1587 PWs)   bands (ev):
+
+    -3.5216   0.5608   2.5859   3.8978   9.0441   9.8803  10.4729  13.3265
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.2500 0.9167 (  1588 PWs)   bands (ev):
+
+    -2.8829  -0.2231   2.2314   3.5494   9.4111   9.9658  10.9738  13.7547
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000-0.1667 0.8333 (  1574 PWs)   bands (ev):
+
+    -2.5113  -0.6651   2.1381   3.4158   9.5253   9.7727  12.3147  12.7683
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.6667-0.1667 1.0000 (  1586 PWs)   bands (ev):
+
+    -2.5685  -0.4437   2.3816   3.0158   8.8618   9.2540  11.6217  14.5723
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5833-0.0833 0.9167 (  1588 PWs)   bands (ev):
+
+    -2.0318  -0.9586   2.0531   2.8567   9.2008  10.4701  11.3491  12.7369
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k = 0.5000 0.0000 0.8333 (  1585 PWs)   bands (ev):
+
+    -2.2670  -0.7267   1.9242   3.0885   9.5062  10.6760  11.2228  12.4827
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.3333-1.0000 0.0000 (  1586 PWs)   bands (ev):
+
+    -1.5115  -1.5115   2.5070   2.5070   8.9208   8.9208  13.0096  13.0096
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+          k =-0.5000-1.0000 0.0000 (  1604 PWs)   bands (ev):
+
+    -1.4640  -1.4640   2.2893   2.2893  10.4441  10.4441  11.2479  11.2479
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     highest occupied, lowest unoccupied level (ev):     6.2470    6.6959
+
+!    total energy              =     -17.05088467 Ry
+     estimated scf accuracy    <          7.3E-12 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =       5.00308998 Ry
+     hartree contribution      =       1.07798695 Ry
+     xc contribution           =      -6.22115110 Ry
+     ewald contribution        =     -16.91081049 Ry
+
+     convergence has been achieved in  11 iterations
+
+     Writing all to output data dir ./Si.save/
+
+     init_run     :      1.82s CPU      1.85s WALL (       1 calls)
+     electrons    :     64.80s CPU     64.97s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      1.67s CPU      1.69s WALL (       1 calls)
+     wfcinit:wfcr :      1.51s CPU      1.52s WALL (      72 calls)
+     potinit      :      0.02s CPU      0.02s WALL (       1 calls)
+     hinit0       :      0.10s CPU      0.10s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     55.97s CPU     56.12s WALL (      12 calls)
+     sum_band     :      8.69s CPU      8.70s WALL (      12 calls)
+     v_of_rho     :      0.09s CPU      0.09s WALL (      12 calls)
+     v_h          :      0.02s CPU      0.02s WALL (      12 calls)
+     v_xc         :      0.07s CPU      0.07s WALL (      12 calls)
+     mix_rho      :      0.04s CPU      0.05s WALL (      12 calls)
+
+     Called by c_bands:
+     init_us_2    :      1.57s CPU      1.59s WALL (    1800 calls)
+     init_us_2:cp :      1.57s CPU      1.58s WALL (    1800 calls)
+     cegterg      :     51.77s CPU     51.88s WALL (     864 calls)
+
+     Called by sum_band:
+     sum_band:wei :      0.00s CPU      0.00s WALL (      12 calls)
+     sum_band:loo :      8.63s CPU      8.64s WALL (      12 calls)
+     sum_band:buf :      0.04s CPU      0.04s WALL (     864 calls)
+     sum_band:ini :      0.77s CPU      0.77s WALL (     864 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.43s CPU      0.43s WALL (    3234 calls)
+     cegterg:over :      1.07s CPU      1.07s WALL (    2442 calls)
+     cegterg:upda :      0.79s CPU      0.80s WALL (    2442 calls)
+     cegterg:last :      1.12s CPU      1.12s WALL (    1877 calls)
+     h_psi        :     49.20s CPU     49.32s WALL (    3378 calls)
+     g_psi        :      0.14s CPU      0.14s WALL (    2442 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      2.03s CPU      2.03s WALL (    3378 calls)
+     vloc_psi     :     44.96s CPU     45.06s WALL (    3378 calls)
+     add_vuspsi   :      2.10s CPU      2.11s WALL (    3378 calls)
+
+     General routines
+     calbec       :      2.02s CPU      2.03s WALL (    3378 calls)
+     fft          :      0.06s CPU      0.06s WALL (      37 calls)
+     ffts         :      0.02s CPU      0.02s WALL (      12 calls)
+     fftw         :     48.24s CPU     48.36s WALL (   45546 calls)
+
+     Parallel routines
+
+     PWSCF        :   1m 6.72s CPU   1m 6.95s WALL
+
+
+   This run was terminated on:  16:53:42  19Oct2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

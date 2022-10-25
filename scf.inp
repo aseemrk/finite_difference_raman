@@ -1,0 +1,40 @@
+&CONTROL
+              prefix = 'Si'
+          pseudo_dir = './'
+         calculation = 'scf'
+           verbosity = 'high'
+
+/
+&SYSTEM
+               ibrav = 2
+                   A = 5.39408
+                 nat = 2
+                ntyp = 1
+                nbnd = 8
+             ecutwfc = 50.0
+             ecutrho = 200.0
+         occupations = 'fixed'
+    force_symmorphic = .true.
+!               nosym = .true.
+!               noinv = .true.
+/
+
+&ELECTRONS
+            conv_thr = 1.0D-10
+         mixing_beta = 0.25
+         startingwfc = 'random'
+!      diago_full_acc = .true.
+!      diago_thr_init = 2.0D-4
+!     diagonalization = 'cg' 
+/
+
+
+ATOMIC_SPECIES
+Si 28.0855 Si.upf
+
+ATOMIC_POSITIONS crystal
+   Si   0.0000000000   0.0000000000   0.0000000000
+   Si   0.2500000000   0.2500000000   0.2500000000
+
+K_POINTS automatic
+ 8 8 8 0 0 0 
